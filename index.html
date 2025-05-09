@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free Website Design Offer – Limited to 10 Business Owners</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Design Offer – Just ₦5000!</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -73,17 +73,13 @@
 <body>
 
 <div class="container">
-  <h1>Let Me Build You a Website – 10 Spots Only</h1>
+  <h1>Let Me Build You a Website – Just ₦5000</h1>
 
-  <p>Hello! My name is <strong>John Agbeja</strong>, and I'm a passionate website designer dedicated to helping business owners like you succeed online.</p>
+  <p>Hi, I’m <strong>John Agbeja</strong>, and I’m offering an irresistible website design offer for just <strong>₦5000</strong>. I’ll help you bring your business online with a clean, modern, and functional website — only <strong>10 slots available</strong>!</p>
 
-  <p>I understand the challenges of growing a business in today’s digital world — which is why I’m offering an exclusive opportunity to just <strong>10 business owners</strong> who are ready to take their brand seriously. I want to design a stunning, functional website for you — not just to showcase your business, but to help you attract more customers, build trust, and scale faster.</p>
+  <p>This is not just about giving you a website — it’s about helping your business grow. Ready to stand out online?</p>
 
-  <p>This isn’t just a giveaway — it’s a commitment from me to help you shine online. If you're intentional about growing your brand, I want to work with you.</p>
-
-  <p><strong>Ready to take your business online?</strong> Fill out the form below and I’ll get in touch with you personally. Spots are limited — secure yours today.</p>
-
-  <form action="https://formspree.io/f/mldblbdb" method="POST">
+  <form id="applicationForm">
     <label for="full_name">Full Name</label>
     <input type="text" id="full_name" name="full_name" required>
 
@@ -115,7 +111,7 @@
     <label for="start_timeline">How soon do you want to get started?</label>
     <input type="text" id="start_timeline" name="start_timeline">
 
-    <button type="submit">Submit Application</button>
+    <button type="submit">Submit & Pay ₦5000</button>
   </form>
 
   <div class="footer">
@@ -123,5 +119,17 @@
   </div>
 </div>
 
+<script>
+  document.getElementById("applicationForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Store form data in sessionStorage if needed later
+    sessionStorage.setItem("formFilled", "true");
+
+    // Redirect to Paystack
+    window.location.href = "https://paystack.com/pay/gja9da-lqp";
+  });
+</script>
+
 </body>
-  </html>
+</html>
