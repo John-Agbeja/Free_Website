@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Website Design Offer – Only ₦5000!</title>
+  <title>Website Design Offer – Just ₦5000!</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Verdana', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
       background-color: #f4f7fa;
       margin: 0;
       padding: 0;
+      color: #222;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 700px;
       margin: 40px auto;
       background: #fff;
       padding: 40px;
@@ -21,25 +24,24 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
-    .hero {
-      background: linear-gradient(135deg, #007BFF, #0056b3);
-      color: white;
-      padding: 30px;
-      border-radius: 12px;
-      margin-bottom: 30px;
+    h1 {
+      text-align: center;
+      color: #0056b3;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
 
-    .hero h1 {
-      margin-top: 0;
+    p {
+      color: #333;
+      margin-bottom: 15px;
     }
 
-    .hero p {
-      font-size: 18px;
-      line-height: 1.6;
+    a {
+      color: #007BFF;
+      text-decoration: none;
     }
 
-    .hero a {
-      color: #ffe600;
+    a:hover {
       text-decoration: underline;
     }
 
@@ -55,7 +57,7 @@
 
     input, textarea, select, button {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-bottom: 20px;
       border-radius: 6px;
       border: 1px solid #ccc;
@@ -81,74 +83,80 @@
       color: #888;
       font-size: 14px;
     }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="hero">
-      <h1>Get a Stunning Website for Just ₦5000!</h1>
-      <p>
-        Hi, I’m <strong>John Agbeja</strong>, a professional website designer, and I’m offering you a limited-time deal for a high-quality website design at an unbeatable price of ₦5000. 
-        <a href="https://john-agbeja.github.io/myportfolio/" target="_blank">Who is John Agbeja?</a>
-      </p>
-      <p>
-        This offer is available to only the first <strong>10 business owners</strong> who take action now. Once the spots are filled, this deal is gone! Don’t miss this opportunity to launch your online presence with a beautiful and functional website.
-      </p>
-      <p>
-        Take action now and secure your spot — time is ticking!
-      </p>
-    </div>
+<div class="container">
+  <h1>Let Me Build You a Stunning Website – Only ₦5000!</h1>
 
-    <form id="websiteForm">
-      <label for="full_name">Full Name</label>
-      <input type="text" id="full_name" name="full_name" required />
+  <p>
+    Hi, I’m <strong>John Agbeja</strong>, a professional website designer, and I’m offering you a 
+    <strong>limited-time offer</strong> for a high-quality website design at an unbeatable price of 
+    <strong>₦5000</strong>. 
+    <a href="https://john-agbeja.github.io/myportfolio/" target="_blank">Who is John Agbeja?</a>
+  </p>
 
-      <label for="business_name">Business Name</label>
-      <input type="text" id="business_name" name="business_name" required />
+  <p>This offer is <strong>only available to the first 10 business owners</strong> who act quickly! Once the spots are filled, this deal will <strong>no longer be available</strong>. Don’t miss your chance to bring your business online with a beautiful and functional website that drives results.</p>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required />
+  <p><strong>Why wait?</strong> Take action now and <strong>secure your spot</strong>. This is a rare opportunity to get a professional website at an exclusive price, and with just a few spots left, you’ll need to act fast to claim yours!</p>
 
-      <label for="phone">Phone Number (WhatsApp preferred)</label>
-      <input type="tel" id="phone" name="phone" required />
+  <form id="applicationForm">
+    <label for="full_name">Full Name</label>
+    <input type="text" id="full_name" name="full_name" required>
 
-      <label for="business_description">What does your business do?</label>
-      <textarea id="business_description" name="business_description" rows="3" required></textarea>
+    <label for="business_name">Business Name</label>
+    <input type="text" id="business_name" name="business_name" required>
 
-      <label for="existing_website">Do you already have a website?</label>
-      <select id="existing_website" name="existing_website" required>
-        <option value="">Select one</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
 
-      <label for="website_goals">What do you hope to achieve with this website?</label>
-      <textarea id="website_goals" name="website_goals" rows="3" required></textarea>
+    <label for="phone">Phone Number (WhatsApp preferred)</label>
+    <input type="tel" id="phone" name="phone" required>
 
-      <label for="features">Any specific features or pages you want included?</label>
-      <textarea id="features" name="features" rows="3"></textarea>
+    <label for="business_description">What does your business do?</label>
+    <textarea id="business_description" name="business_description" rows="3" required></textarea>
 
-      <label for="start_timeline">How soon do you want to get started?</label>
-      <input type="text" id="start_timeline" name="start_timeline" />
+    <label for="existing_website">Do you already have a website?</label>
+    <select id="existing_website" name="existing_website" required>
+      <option value="">Select one</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
 
-      <button type="submit">Submit & Pay ₦5000</button>
-    </form>
+    <label for="website_goals">What do you hope to achieve with this website?</label>
+    <textarea id="website_goals" name="website_goals" rows="3" required></textarea>
 
-    <div class="footer">
-      © 2025 John Agbeja. All rights reserved.
-    </div>
+    <label for="features">Any specific features or pages you want included?</label>
+    <textarea id="features" name="features" rows="3"></textarea>
+
+    <label for="start_timeline">How soon do you want to get started?</label>
+    <input type="text" id="start_timeline" name="start_timeline">
+
+    <button type="submit">Submit & Pay ₦5000 – Only a Few Spots Left!</button>
+  </form>
+
+  <div class="footer">
+    © 2025 John Agbeja. All rights reserved.
   </div>
+</div>
 
-  <script>
-    document.getElementById('websiteForm').addEventListener('submit', function(e) {
-      e.preventDefault();
+<script>
+  document.getElementById("applicationForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    window.location.href = "https://paystack.com/pay/gja9da-lqp";
+  });
+</script>
 
-      // Optional: You can collect the form data if you want to save it somewhere
-
-      // Redirect to Paystack Payment
-      window.location.href = "https://paystack.com/pay/gja9da-lqp";
-    });
-  </script>
 </body>
 </html>
