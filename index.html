@@ -24,11 +24,19 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
+    .hero-header {
+      background-image: url('background.jpeg'); /* Full base64 string inserted here */
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
       text-align: center;
-      color: #0056b3;
-      font-size: 28px;
-      margin-bottom: 20px;
+      border-radius: 12px;
+      color: white;
+    }
+
+    .hero-header h1 {
+      font-size: 32px;
+      margin: 0;
     }
 
     p {
@@ -89,7 +97,7 @@
         padding: 20px;
       }
 
-      h1 {
+      .hero-header h1 {
         font-size: 24px;
       }
     }
@@ -98,7 +106,9 @@
 <body>
 
 <div class="container">
-  <h1>Let Me Build You a Stunning Website – Only ₦5000!</h1>
+  <div class="hero-header">
+    <h1>Let me make you a Stunning Website</h1>
+  </div>
 
   <p>
     Hi, I’m <strong>John Agbeja</strong>, a professional website designer, and I’m offering you a 
